@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>product </title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stylish Multi-Item Carousel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+      body {
+          background-color: #f4f6f9;
+          font-family: 'Arial', sans-serif;
+      }
+
+      .carousel-container {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 2rem 0;
+      }
+
+      .carousel-title {
+          color: #2c3e50;
+          margin-bottom: 1.5rem;
+          font-weight: 300;
+      }
+
+      .carousel-item-card {
+          transition: all 0.3s ease;
+          border: none;
+          border-radius: 15px;
+          overflow: hidden;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+          margin: 0 10px;
+          background-color: white;
+      }
+
+      .carousel-item-card:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+      }
+
+      .carousel-item-card img {
+          width: 100%;
+          height: 250px;
+          object-fit: cover;
+          transition: transform 0.3s ease;
+      }
+
+      .carousel-item-card:hover img {
+          transform: scale(1.1);
+      }
+
+      .carousel-control-prev,
+      .carousel-control-next {
+          width: 50px;
+          height: 50px;
+          top: 50%;
+          transform: translateY(-50%);
+          background-color: rgba(44, 62, 80, 0.7);
+          border-radius: 50%;
+          opacity: 0.7;
+          transition: opacity 0.3s ease;
+      }
+
+      .carousel-control-prev:hover,
+      .carousel-control-next:hover {
+          opacity: 1;
+      }
+
+      .carousel-indicators {
+          bottom: -40px;
+      }
+
+      .carousel-indicators [data-bs-target] {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: #2c3e50;
+          opacity: 0.5;
+          margin: 0 5px;
+      }
+
+      .carousel-indicators .active {
+          opacity: 1;
+          background-color: #3498db;
+      }
+
+      @media (max-width: 768px) {
+          .carousel-item-card {
+              margin: 0 5px;
+          }
+
+          .carousel-title {
+              font-size: 1.5rem;
+          }
+      }
+  </style>
+</head>
+<body>
+  <!--------------------------------------------------- this is navbar section of page ---------------------------------------------------------->
+<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <img src="logo.png" alt="Organic Logo" class="logo">
+    <div class="search-container text-center">
+        <select class="category-dropdown mr-2">
+            <a href="#"><option>All Categories</option></a>
+            <a href="#sectionVegetablesandFruits"><option>Vegetables and Fruits</option></a>
+            <a href="#sectionBooks"><option>Books</option></a>
+            <a href="#maincosmetic"><option>cosmotics</option></a>
+        </select>
+        <input type="search" class="search-input" placeholder="Search">
+
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#bannersection">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+      
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown link
+                </a>
+                <ul class="dropdown-menu">
+                    <div class="icons">
+                        <a href="#"><span class="icon">🔖</span></a>
+                        <a href="#"><span class="icon">🛒</span></a>
+                    </div>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+</nav> 
+<!------------------------------------------------------ here navbar sections ends ------------------------------------------------------------->
+
+<!----------------------------------------------------- this is vidoe page start ------------------------------------------------------------->
+<section>
+    <video width="100%" height="80%"  id="bannersection" autoplay loop muted>
+        <source src="https://res.cloudinary.com/dreslhtoj/video/upload/v1733551597/Grey_Green_Modern_Bold_Grocery_Store_Promo_Video_1_ewgcsb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</section>
+<!------------------------------------------------------ this is vidoe page ends ---------------------------------------------------------------->
+   <!-- ----------------------------------------------this is fruits and Vegetables ------------------------------------------------------>
+<section class="container carousel-container text-center" id="pageup">
+    <div class="d-flex flex-row ">
+          <div class="carousel-title1"> <h2>Fruits and Vegetables</h2>
+          </div>
+          <div class="carousel-title">
+              <a href="#">See All <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right pr-3" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+          </svg></a> 
+          </div>
+      </div>
+      <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+              <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <div class="d-flex justify-content-center">
+                      <div class="col-4 m-2">
+                          <div class="card carousel-item-card">
+                              <img src="https://res.cloudinary.com/dreslhtoj/image/upload/v1733566199/apple_za0lx2.png " class="w-100" alt="Apple">
+                              <div class="card-body">
+                                  <h5 class="card-title">Apple</h5>
+                                  <p class="card-text">A brief description of the product.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-4 m-2">
+                          <div class="card carousel-item-card">
+                              <img src="https://res.cloudinary.com/dreslhtoj/image/upload/v1733566744/grapes_hlw1nz.png" class="w-100" alt="Grapes">
+                              <div class="card-body">
+                                  <h5 class="card-title">Grapes</h5>
+                                  <p class="card-text">Another amazing product description.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-4 m-2">
+                          <div class="card carousel-item-card">
+                              <img src="https://res.cloudinary.com/dreslhtoj/image/upload/v1733566867/watermelon_ncoyqp.png " class="w-100" alt="WaterMelon">
+                              <div class="card-body">
+                                  <h5 class="card-title">WaterMelon</h5>
+                                  <p class="card-text">Yet another fantastic product.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                      <div class="col-4 m-2">
+                          <div class="card carousel-item-card">
+                              <img src="https://res.cloudinary.com/dreslhtoj/image/upload/v1733567073/pineapple_kgk1ix.png" class="w-100" alt="Pineapple">
+                              <div class="card-body">
+                                  <h5 class="card-title">Pineapple</h5>
+                                  <p class="card-text">A creative product description.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-4 m-2">
+                          <div class="card carousel-item-card">
+                              <img src="https://res.cloudinary.com/dreslhtoj/image/upload/v1733567338/orange_gutffv.png " class="w-100" alt="Product 5">
+                              <div class="card-body">
+                                  <h5 class="card-title">Orange</h5>
+                                  <p class="card-text">Another innovative product.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-4 m-2">
+                          <div class="card carousel-item-card">
+                              <img src="https://res.cloudinary.com/dreslhtoj/image/upload/v1733567339/dragon_kcld14.png " class="w-100" alt="Product 6">
+                              <div class="card-body">
+                                  <h5 class="card-title">Dragon Fruit</h5>
+                                  <p class="card-text">A standout product offering.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+  </section>
+
+
+<!--------------------------------------------------- this  is cosmetic ------------------------------------------------------------------>
+<section  id="maincosmetic" class="container carousel-container text-center">
+      <div class="d-flex flex-row ">
+          <div class="carousel-title1"> <h2>Cosmetics</h2>
+          </div>
+          <div class="carousel-title">
+              <a href="/cosmoticspage/cosmo.html">See All <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right pr-3" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+          </svg></a> 
+          </div>
+      </div>
+      <div id="featuredCarousel1" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+              <button type="button" data-bs-target="#featuredCarousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#featuredCarousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <div class="d-flex justify-content-center">
+                      <div class="col-4 m-2">
+                          <div class="card carousel-item-card">
+                              <img src="https://res.cloudinary.com/dreslhtoj/image/upload/v1733567763/lipstick_fde00e.png " class="card-img-top" alt="Product 1">
+                              <div class="card-body">
+                                  <h5 class="card-title">Product 1</h5>
+                                  <p class="card-text">A brief description of the product.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-4 m-2">
+                          <div class="card carousel-item-card">
+                              <img src="https://res.cloudinary.com/dreslhtoj/image/upload/v1733568410/concealers_tveyoj.png " class="card-img-top" alt="Product 2">
+                              <div class="card-body">
+                                  <h5 class="card-title">Product 2</h5>
+                                  <p class="card-text">Another amazing product description.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-4 m-2">
+                          <div class="card carousel-item-card">
+                              <img src="https://res.cloudinary.com/dreslhtoj/image/upload/v1733568410/primer_mffkml.png " class="card-img-top" alt="Product 3">
+                              <div class="card-body">
+                                  <h5 class="card-title">Product 3</h5>
+                                  <p class="card-text">Yet another fantastic product.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                      <div class="col-4 m-2">
+                          <div class="card carousel-item-card">
+                              <img src="https://res.cloudinary.com/dreslhtoj/image/upload/v1733568411/foundation_j8lzdr.png " class="card-img-top" alt="Product 4">
+                              <div class="card-body">
+                                  <h5 class="card-title">Product 4</h5>
+                                  <p class="card-text">A creative product description.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-4 m-2">
+                          <div class="card carousel-item-card">
+                              <img src="https://res.cloudinary.com/dreslhtoj/image/upload/v1733568411/eye_shadow_xf5ew8.png " class="card-img-top" alt="Product 5">
+                              <div class="card-body">
+                                  <h5 class="card-title">Orange</h5>
+                                  <p class="card-text">Another innovative product.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-4 m-2">
+                          <div class="card carousel-item-card">
+                              <img src="https://res.cloudinary.com/dreslhtoj/image/upload/v1733568410/mascara_hbpyju.png " class="card-img-top" alt="Product 6">
+                              <div class="card-body">
+                                  <h5 class="card-title">Dragon Fruit</h5>
+                                  <p class="card-text">A standout product offering.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel1" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+  </section>
+
+<!-------------------------------------------------- this is books section  --------------------------------------------------->
+<section class="container carousel-container text-center" id="books">
+      <div class="d-box">
+          <div class="carousel-title1"> <h2>Books</h2>
+          </div>
+          <div class="carousel-title">
+              <a href="/books/books.html">See All <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right pr-3" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+          </svg></a> 
+          </div>
+      </div>
+      <div id="featuredCarousel2" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+              <button type="button" data-bs-target="#featuredCarousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#featuredCarousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <div class="d-flex justify-content-center">
+                      <div class="col-4 m-2">
+                          <div class="card carousel-item-card">
+                              <img src="https://res.cloudinary.com/dreslhtoj/image/upload/v1733572018/romance_books_qimglm.png " class="card-img-top" alt="Product 1">
+                              <div class="card-body">
+                                  <h5 class="card-title">Product 1</h5>
+                                  <p class="card-text">A brief description of the product.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-4 m-2">
+                          <div class="card carousel-item-card">
+                              <img src="https://res.cloudinary.com/dreslhtoj/image/upload/v1733572018/selfhelp_bdn2bb.png " class="card-img-top" alt="Product 2">
+                              <div class="card-body">
+                                  <h5 class="card-title">Product 2</h5>
+                                  <p class="card-text">Another amazing product description.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-4 m-2">
+                          <div class="card carousel-item-card">
+                              <img src="https://res.cloudinary.com/dreslhtoj/image/upload/v1733572018/bio_graphics_geefmp.png " class="card-img-top" alt="Product 3">
+                              <div class="card-body">
+                                  <h5 class="card-title">Product 3</h5>
+                                  <p class="card-text">Yet another fantastic product.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                      <div class="col-4 m-2">
+                          <div class="card carousel-item-card">
+                              <img src="https://res.cloudinary.com/dreslhtoj/image/upload/v1733572020/MANGA_bbg9ut.png " class="card-img-top" alt="Product 4">
+                              <div class="card-body">
+                                  <h5 class="card-title">Product 4</h5>
+                                  <p class="card-text">A creative product description.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-4 m-2">
+                          <div class="card carousel-item-card">
+                              <img src="https://res.cloudinary.com/dreslhtoj/image/upload/v1733572019/business_books_xdn6sx.png " class="card-img-top" alt="Product 5">
+                              <div class="card-body">
+                                  <h5 class="card-title">Orange</h5>
+                                  <p class="card-text">Another innovative product.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-4 m-2">
+                          <div class="card carousel-item-card">
+                              <img src="https://res.cloudinary.com/dreslhtoj/image/upload/v1733572024/mystery_book_y2gsuv.png " class="card-img-top" alt="Product 6">
+                              <div class="card-body">
+                                  <h5 class="card-title">Dragon Fruit</h5>
+                                  <p class="card-text">A standout product offering.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel2" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+  </section>
+    
+       
+<!----------------------------------------------------------- this is footer section ------------------------------------------------------------->
+<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+  <div class="social" role="navigation" aria-labelledby="social-heading">
+      <h3 id="social-heading" class="sr-only">Follow us on social media</h3>
+      <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#" aria-label="Mastodon"><i class="fa-brands fa-mastodon"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+  </div>
+  <hr class="footer-break">
+  <ul class="footer-links" role="navigation" aria-labelledby="footer-links-heading">
+      <h3 id="footer-links-heading" class="sr-only">Footer Links</h3>
+      <li><a href="#">Site Home</a></li>
+      <li><a href="#">Playground</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Sitemap</a></li>
+      <li><a href="#">Contents</a></li>
+  </ul>
+  <p class="copyright">© 2024 SDavidPrince. Demo of a footer. Some Rights Reserved</p>
+</footer>
+
+
+
+
+<!-- this is javascript automatic page up -->
+<script>
+    let currentSection = 0;
+
+    function autoScroll() {
+        const sections = document.querySelectorAll('#pageup');
+        currentSection = (currentSection + 1) % sections.length;
+
+        // Scroll to the next section
+        sections[currentSection].scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+        });
+    }
+
+    // Automatically scroll every 10 seconds
+    setInterval(autoScroll, 10000);
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
